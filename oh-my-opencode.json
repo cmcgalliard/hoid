@@ -1,9 +1,44 @@
 {
   "$schema": "https://raw.githubusercontent.com/code-yeongyu/oh-my-opencode/master/assets/oh-my-opencode.schema.json",
   "comment": "All agents configured to use GitHub Copilot models only - Updated Mar 2026",
+  "default_agent": "hoid",
   "disabled_mcps": [
     "websearch",
     "context7",
     "grep_app"
-  ]
+  ],
+  "agents": {
+    "hoid": {
+      "model": "github-copilot/claude-sonnet-4.6",
+      "description": "Main orchestrator agent - uses Claude Sonnet 4.6 for maximum reasoning",
+    },
+    "sisyphus": {
+      "model": "github-copilot/claude-opus-4.6",
+      "description": "Main orchestrator agent - uses Claude Opus 4.6 for maximum reasoning"
+    },
+    "librarian": {
+      "model": "github-copilot/claude-sonnet-4.6",
+      "description": "Documentation and codebase research - uses Claude Sonnet 4.6"
+    },
+    "explore": {
+      "model": "github-copilot/grok-code-fast-1",
+      "description": "Fast codebase exploration - uses Grok Code (unchanged, still fastest)"
+    },
+    "oracle": {
+      "model": "github-copilot/gpt-5.4",
+      "description": "Architecture and strategy - uses GPT-5.4 for deep analysis"
+    },
+    "frontend-ui-ux-engineer": {
+      "model": "github-copilot/gemini-3.1-pro-preview",
+      "description": "Frontend development - uses Gemini 3.1 Pro"
+    },
+    "document-writer": {
+      "model": "github-copilot/gemini-3-flash-preview",
+      "description": "Technical writing - uses Gemini 3 Flash (unchanged, good speed/quality)"
+    },
+    "multimodal-looker": {
+      "model": "github-copilot/gemini-3.1-pro-preview",
+      "description": "Visual content analysis - uses Gemini 3.1 Pro for better multimodal"
+    }
+  }
 }

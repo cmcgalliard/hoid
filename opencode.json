@@ -1,6 +1,7 @@
 {
   "plugin": ["oh-my-opencode@3.5.3", "superpowers@git+https://github.com/obra/superpowers.git"],
   "model": "github-copilot/claude-sonnet-4.6",
+  "default_agent": "hoid",
   "share": "disabled",
   "$schema": "https://opencode.ai/config.json"
 }
