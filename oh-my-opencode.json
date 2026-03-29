@@ -1,0 +1,9 @@
+{
+  "$schema": "https://raw.githubusercontent.com/code-yeongyu/oh-my-opencode/master/assets/oh-my-opencode.schema.json",
+  "comment": "All agents configured to use GitHub Copilot models only - Updated Mar 2026",
+  "disabled_mcps": [
+    "websearch",
+    "context7",
+    "grep_app"
+  ]
+}
